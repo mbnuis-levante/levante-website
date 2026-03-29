@@ -45,3 +45,38 @@ textarea{min-height:130px;resize:vertical}
 .hidden{display:none}
 @media (max-width:980px){.hero-grid,.two-col,.bottom-grid,.grid-4,.hero-cards,.grid-2{grid-template-columns:1fr}h1{font-size:42px}h2{font-size:32px}}
 @media (max-width:760px){.nav{display:none}.container{width:min(1120px,calc(100% - 24px))}.hero{padding-top:30px}.lead,.section-text,.two-col p{font-size:18px}}
+.about-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:40px;
+  align-items:center;
+}
+
+.about-text p{
+  font-size:20px;
+  color:#475569;
+}
+
+.about-photo-wrap{
+  display:flex;
+  justify-content:center;
+}
+
+.about-photo{
+  width:100%;
+  max-width:420px;
+  border-radius:28px;
+  object-fit:cover;
+  box-shadow:0 18px 40px rgba(15,23,42,.14);
+  border:1px solid #e2e8f0;
+}
+
+@media (max-width: 980px){
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .about-photo{
+    max-width:360px;
+  }
+}
